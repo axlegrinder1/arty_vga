@@ -15,6 +15,6 @@ Based initially on the example vga design from digilent
 - [Digilent board files](https://github.com/Digilent/vivado-boards)
 
 ### Re-building the project:
-1. Run vivado's tcl shell
-2. Navigate to arty_vga/vivado
-3. Run arty_vga_1.tcl
+1. Run vivado 2023.2 gui
+2. In the TCL console, navigate to arty_vga/vivado
+3. `source arty_vga_1.tcl`

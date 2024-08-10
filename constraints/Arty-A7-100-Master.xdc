@@ -8,7 +8,7 @@
 ## Clock signal
 set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports clk100mhz]
 create_clock -period 10.000 -name system_clk -waveform {0.000 5.000} -add [get_ports clk100mhz]
-create_generated_clock -name vga_clk -source [get_ports *clk100mhz*] -divide_by 25000 -multiply_by 37125 [get_pins vga_ctrl_inst/vga_clk_control_inst/vga_clk_wiz_i/inst/CLK_CORE_DRP_I/clk_inst/clk_out1]
+create_generated_clock -name vga_clk -source [get_ports *clk100mhz*] -divide_by 25000 -multiply_by 37125 [get_pins vga_ctrl_inst/vga_clk_control_inst/vga_clk_wiz_i/inst/CLK_CORE_DRP_I/clk_inst/mmcm_adv_inst/CLKOUT0]
 set_clock_groups -asynchronous -group [get_clocks system_clk] -group [get_clocks vga_clk]
 
 

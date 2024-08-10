@@ -86,7 +86,7 @@ begin
         port map (
             clk           => clk,
             rstn          => rstn,
-            refclk        => clk100mhz,
+            refclk        => clk,
             resolution    => resolution,
             resolution_we => resolution_we,
             vga_hs_o      => vga_hs_o,
