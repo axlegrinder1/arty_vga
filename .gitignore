@@ -1,0 +1,32 @@
+# Ignore build output directory
+/vivado/*/*
+/export
+/work
+**/.cache
+
+# Ignore object files and dependent files
+*.o
+*.d
+*.elf
+*.elf.size
+
+#Ignore logs folder and log files
+/logs
+*/vivado*.log
+*/vivado*.jou
+*/vivado*.str
+
+#Ignore lock files
+.lock
+
+.bin
+.pdi
+.peers.ini
+.repo.yaml
+.vitisWorkspace.json
+/.Xil
+vlog.opt
+vsim.wlf
+modelsim.ini
+/.vscode
+/.theia
